@@ -4,7 +4,7 @@ const Card = ({ card, handleSelect }) => {
   const { id, title, image, credit, price, details } = card;
   return (
     <div className="">
-      <div className="card card-compact h-full bg-base-100 shadow-xl">
+      <div className="card card-compact h-full bg-base-100 ">
         <div className="card-body">
           <img src={image} alt="Introduction to Algorithms" className="pb-2" />
           <h2 className="card-title">{title}</h2>

@@ -15,8 +15,8 @@ const Main = ({ handleSelect, selected, totalCredit,remaining }) => {
       <div className="lg:w-3/4">
         <Cards handleSelect={handleSelect} cards={cards}></Cards>
       </div>
-      <div className="bg-green-500 lg:w-1/4">
-        <div className="bg-base-100">
+      <div className=" lg:w-1/4">
+        <div className="bg-base-100 px-4 py-6 rounded-xl     mt-10 lg:mt-0  ">
           <Selected remaining={remaining} totalCredit={totalCredit} selected={selected}></Selected>
         </div>
       </div>

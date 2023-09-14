@@ -5,38 +5,38 @@ const Selected = ({ selected, totalCredit, remaining }) => {
     <div>
       <div>
         {remaining >= 0 ? (
-          <h1>Credit hours remaining :{remaining} </h1>
+          <h1 className="text-lg font-bold text-blue-500 border-b-2 border-gray-400 pb-3">Credit Hours Remaining :{remaining} </h1>
         ) : (
           <div>
-            <p>No Credit Remaining.</p>
+            <p className="text-lg font-bold text-blue-500 border-b-2 border-gray-400 pb-3">No Credit Remaining.</p>
             <div className="toast toast-top toast-end">
               <div className="alert bg-green-500">
                 <span className="text-xl text-white font-bold">
-                  Sorry Credit Limit is Full !!
+                  Not enough Credit !!
                 </span>
               </div>
             </div>
           </div>
         )}
       </div>
-      <div>
-        <h1>Course Name</h1>
+      <div className="border-b-2 border-gray-400 py-3">
+        <h1 className="text-lg font-bold mb-6">Course Name</h1>
         {selected.map((item, idx) => (
-          <p key={idx}>
+          <p className="py-2" key={idx}>
             {idx + 1} . {item.title}
           </p>
         ))}
       </div>
       <div>
         {totalCredit <= 20 ? (
-          <p>Total Credit Hour : {totalCredit}</p>
+          <p className="py-3">Total Credit Hour : {totalCredit}</p>
         ) : (
           <div>
-            <p>Credit is Limited to 20</p>
+            <p className="py-3 text-lg font-semibold">Credit is Limited to 20</p>
             <div className="toast toast-end toast-middle">
               <div className="alert bg-red-500">
                 <span className="text-xl text-white font-bold">
-                  Sorry Credit Limit is Full !!
+                  Credit Limit is Full !!
                 </span>
               </div>
             </div>
