@@ -1,9 +1,11 @@
 import Card from "../Card/Card";
 
-const Cards = () => {
+const Cards = ({cards}) => {
   return (
-    <div className="grid grid-cols-3 gap-6">
-      <Card></Card>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {
+        cards.map(card => <Card key={card.id} card={card}></Card>)
+      }
     </div>
   );
 };
