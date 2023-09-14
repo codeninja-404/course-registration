@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/njyLkWT/Rectangle-2.png",
+    "title": "Introduction to OOP Python",
+    "credit": 1,
+    "price": 15000,
+    "details": "Object-Oriented Programming (OOP) in Python is a programming paradigm that organizes code into objects, combining data and methods, facilitating code reusability, and modeling real-world concepts for efficient software development."
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/60LZ08F/Rectangle-2-1.png",
+    "title": "Database (MySQL)",
+    "credit": 2,
+    "price": 25000,
+    "details": "MySQL is an open-source relational database management system (RDBMS) widely used for storing and retrieving structured data. It provides efficient data management, SQL querying, and scalability for applications."
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/ZVmbyxj/Rectangle-2-2.png",
+    "title": "Introduction to C Programming",
+    "credit": 10,
+    "price": 10000,
+    "details": "C programming is a versatile, low-level programming language. It's known for system software, embedded systems, and high-performance applications. C offers control and efficiency through manual memory management."
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/CmWSqkB/Rectangle-2-3.png",
+    "title": "Introduction to Algorithms",
+    "credit": 5,
+    "price": 35000,
+    "details": "Algorithms are step-by-step procedures for solving problems. They are fundamental in computer science, optimizing processes, and making efficient decisions in various domains, from sorting data to artificial intelligence."
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/X7pdfHW/Rectangle-2-4.png",
+    "title": "Introduction to C++ for DSA",
+    "credit": 5,
+    "price": 19000,
+    "details": "C++ is a versatile programming language often used for Data Structures and Algorithms (DSA). Its object-oriented features make it suitable for implementing complex DSA concepts and optimizing algorithmic solutions."
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/2dxq6Pf/Rectangle-2-5.png",
+    "title": "Software Engineering",
+    "credit": 2,
+    "price": 23000,
+    "details": "Software Engineering is a systematic approach to designing, developing, testing, and maintaining software systems. It encompasses best practices, methodologies, and tools to ensure quality, reliability, and efficient software production."
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/RcTFxKr/Rectangle-2-6.png",
+    "title": "Problem-Solving Part",
+    "credit": 5,
+    "price": 35000,
+    "details": "Problem-solving is the process of analyzing, designing, and implementing solutions to challenges. It involves critical thinking, creativity, and systematic approaches to address problems effectively and reach desired outcomes.."
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/xXGB7Zd/Rectangle-3.png",
+    "title": "Basic Data Structures",
+    "credit": 5,
+    "price": 19000,
+    "details": "Basic data structures include arrays, linked lists, stacks, and queues. They organize and store data for efficient retrieval, insertion, and deletion, forming the foundation of computer algorithms and software development."
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/PY1Fy7y/Rectangle-3-1.png",
+    "title": "AWS, Cloud Computing",
+    "credit": 2,
+    "price": 23000,
+    "details": "Amazon Web Services (AWS) is a leading cloud computing platform, offering scalable and on-demand computing resources, storage, and services over the internet. It revolutionizes IT infrastructure and enables innovation."
+  }
+]
