@@ -1,7 +1,7 @@
 import { FaDollarSign, FaBookOpen } from "react-icons/fa";
 
 const Card = ({ card, handleSelect }) => {
-  const { title, image, credit, price, details } = card;
+  const { id, title, image, credit, price, details } = card;
   return (
     <div className="">
       <div className="card card-compact h-full bg-base-100 shadow-xl">
@@ -27,7 +27,7 @@ const Card = ({ card, handleSelect }) => {
           </div>
           <div className="card-actions justify-end">
             <button
-              onClick={()=>(handleSelect(card))}
+              onClick={() => handleSelect(card)}
               className="btn text-white hover:text-black bg-blue-400 w-full"
             >
               Select

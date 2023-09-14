@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import Cards from "../Cards/Cards";
 import Selected from "../Selected/Selected";
 
-const Main = ({ handleSelect,selected }) => {
+const Main = ({ handleSelect, selected, totalCredit }) => {
   const [cards, setCards] = useState([]);
   useEffect(() => {
-    fetch("/public/data.json")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => setCards(data));
   }, []);
@@ -16,8 +16,9 @@ const Main = ({ handleSelect,selected }) => {
         <Cards handleSelect={handleSelect} cards={cards}></Cards>
       </div>
       <div className="bg-green-500 lg:w-1/4">
-        <Selected selected={selected}>
-        </Selected>
+        <div className="bg-base-100">
+          <Selected totalCredit={totalCredit} selected={selected}></Selected>
+        </div>
       </div>
     </div>
   );

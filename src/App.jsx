@@ -5,15 +5,34 @@ import Main from "./components/Main/Main";
 
 function App() {
   const [selected, setSelected] = useState([]);
+  const [totalCredit, setTotalCredit] = useState(0);
+
   const handleSelect = (card) => {
-    const newSelected = [...selected, card];
-    setSelected(newSelected);
-    
+    const isExiest = selected.find((item) => item.id === card.id);
+    let credit = card.credit;
+    if (isExiest) {
+      return;
+    } else {
+      if (totalCredit <= 20) {
+        selected.forEach((item) => {
+          credit = credit + item.credit;
+        });
+        setTotalCredit(credit);
+        const newSelected = [...selected, card];
+        setSelected(newSelected);
+      } else {
+        return;
+      }
+    }
   };
   return (
     <>
       <Header></Header>
-      <Main selected={selected} handleSelect={handleSelect}></Main>
+      <Main
+        totalCredit={totalCredit}
+        selected={selected}
+        handleSelect={handleSelect}
+      ></Main>
     </>
   );
 }
