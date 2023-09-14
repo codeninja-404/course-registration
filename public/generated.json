@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/njyLkWT/Rectangle-2.png",
+    "title": "Introduction to OOP Python",
+    "credit": 1,
+    "price": 15000,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/60LZ08F/Rectangle-2-1.png",
+    "title": "Database (MySQL)",
+    "credit": 2,
+    "price": 25000,
+    "details": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/ZVmbyxj/Rectangle-2-2.png",
+    "title": "Introduction to C Programming",
+    "credit": 10,
+    "price": 10000,
+    "details": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/CmWSqkB/Rectangle-2-3.png",
+    "title": "Introduction to Algorithms",
+    "credit": 5,
+    "price": 35000,
+    "details": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/X7pdfHW/Rectangle-2-4.png",
+    "title": "Introduction to C++ for DSA",
+    "credit": 5,
+    "price": 19000,
+    "details": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/2dxq6Pf/Rectangle-2-5.png",
+    "title": "Software Engineering",
+    "credit": 2,
+    "price": 23000,
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/RcTFxKr/Rectangle-2-6.png",
+    "title": "Problem-Solving Part",
+    "credit": 5,
+    "price": 35000,
+    "details": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/xXGB7Zd/Rectangle-3.png",
+    "title": "Basic Data Structures",
+    "credit": 5,
+    "price": 19000,
+    "details": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/PY1Fy7y/Rectangle-3-1.png",
+    "title": "AWS, Cloud Computing",
+    "credit": 2,
+    "price": 23000,
+    "details": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  }
+]
