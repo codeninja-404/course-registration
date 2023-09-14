@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Cards from "../Cards/Cards";
 import Selected from "../Selected/Selected";
 
-const Main = ({ handleSelect, selected, totalCredit }) => {
+const Main = ({ handleSelect, selected, totalCredit,remaining }) => {
   const [cards, setCards] = useState([]);
   useEffect(() => {
     fetch("/data.json")
@@ -17,7 +17,7 @@ const Main = ({ handleSelect, selected, totalCredit }) => {
       </div>
       <div className="bg-green-500 lg:w-1/4">
         <div className="bg-base-100">
-          <Selected totalCredit={totalCredit} selected={selected}></Selected>
+          <Selected remaining={remaining} totalCredit={totalCredit} selected={selected}></Selected>
         </div>
       </div>
     </div>

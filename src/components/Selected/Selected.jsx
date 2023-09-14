@@ -1,9 +1,24 @@
 import React, { useState } from "react";
 
-const Selected = ({ selected, totalCredit }) => {
+const Selected = ({ selected, totalCredit, remaining }) => {
   return (
     <div>
-      <div></div>
+      <div>
+        {remaining >= 0 ? (
+          <h1>Credit hours remaining :{remaining} </h1>
+        ) : (
+          <div>
+            <p>No Credit Remaining.</p>
+            <div className="toast toast-top toast-end">
+              <div className="alert bg-green-500">
+                <span className="text-xl text-white font-bold">
+                  Sorry Credit Limit is Full !!
+                </span>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
       <div>
         <h1>Course Name</h1>
         {selected.map((item, idx) => (
@@ -18,9 +33,11 @@ const Selected = ({ selected, totalCredit }) => {
         ) : (
           <div>
             <p>Credit is Limited to 20</p>
-            <div className="toast toast-top toast-end">
+            <div className="toast toast-end toast-middle">
               <div className="alert bg-red-500">
-                <span className="text-xl text-white font-bold">Sorry Credit Limit is Full.</span>
+                <span className="text-xl text-white font-bold">
+                  Sorry Credit Limit is Full !!
+                </span>
               </div>
             </div>
           </div>
