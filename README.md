@@ -1,8 +1,8 @@
-# React + Vite
+Projects features .
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- You can not select the same course twice.
+- If the credit limit is full and if these is no credit remaining the app will display a toast.
+- This project is equally responsive for phone,tablet and big screen.
 
-Currently, two official plugins are available:
+As react is uni-directional. we can not send data to parent component. so i lifted the state so that it will be easy to access the data from children component . after that i used props driling to axcces the data from the parent component.. that how i managed state in this assignment..
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
