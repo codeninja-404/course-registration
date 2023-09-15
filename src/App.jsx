@@ -12,19 +12,20 @@ function App() {
     const isExiest = selected.find((item) => item.id === card.id);
     let credit = card.credit;
     if (isExiest) {
-      return;
+      return ;
     } else {
-      if (totalCredit <= 20) {
-        selected.forEach((item) => {
-          credit = credit + item.credit;
-        });
-        const newRemaining = 20 - credit;
-        setRemaining(newRemaining)
+      selected.forEach((item) => {
+        credit = credit + item.credit;
+      });
+      const newRemaining = 20 - credit;
+
+      if (credit > 20) {
+        return;
+      } else {
+        setRemaining(newRemaining);
         setTotalCredit(credit);
         const newSelected = [...selected, card];
         setSelected(newSelected);
-      } else {
-        return;
       }
     }
   };
@@ -32,7 +33,7 @@ function App() {
     <>
       <Header></Header>
       <Main
-      remaining={remaining}
+        remaining={remaining}
         totalCredit={totalCredit}
         selected={selected}
         handleSelect={handleSelect}
