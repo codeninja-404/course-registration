@@ -3,7 +3,7 @@ const Selected = ({ selected, totalCredit, remaining, toast }) => {
     <div>
       <div>
         {toast === 0 ? (
-          <h1 className="text-xl font-bold text-blue-500 border-b-2 border-gray-400 pb-3">
+          <h1 className="text-xl  font-bold text-blue-500 border-b-2 border-gray-400 pb-3">
             Credit Hours Remaining :{remaining}
           </h1>
         ) : (
