@@ -7,7 +7,7 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 
 function App() {
-  const notify = () => toast("Can't select same course twice");
+  
   const [selected, setSelected] = useState([]);
   const [totalCredit, setTotalCredit] = useState(0);
   const [remaining, setRemaining] = useState(20);
@@ -16,8 +16,7 @@ function App() {
     const isExiest = selected.find((item) => item.id === card.id);
     let credit = card.credit;
     if (isExiest) {
-      ;
-      return notify();
+      return;
     } else {
       selected.forEach((item) => {
         credit = credit + item.credit;
@@ -38,7 +37,6 @@ function App() {
   };
   return (
     <> 
-    <ToastContainer/>
       <Header></Header>
       <Main
         toast={toast}

@@ -1,6 +1,6 @@
 Projects features .
 
-- You can not select the same course twice the app will show you an alert..
+- You can not select the same course twice...
 - If the credit limit is full and if there is no credit remaining the app will display a toast.
 - This project is equally responsive for phone,tablet and big screen.
 
