@@ -13,7 +13,7 @@ function App() {
     const isExiest = selected.find((item) => item.id === card.id);
     let credit = card.credit;
     if (isExiest) {
-      alert("Can't Select Same course twice");
+      alert("Can't select same course twice");
       return ;
     } else {
       selected.forEach((item) => {
